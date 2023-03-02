@@ -1,0 +1,4 @@
+mlruns
+__pycache__
+.ipynb_checkpoints
+mnist_model.h5

@@ -91,7 +91,8 @@ if __name__ == "__main__":
     )
     args, _ = parser.parse_known_args()
 
-    runtime_env = {"pip": ["pytorch-lightning==1.8.0", "lightning-bolts==0.6.0.post1", "torchmetrics==0.10.3"]}
+    #runtime_env = {"pip": ["pytorch-lightning==1.8.0", "lightning-bolts==0.6.0.post1", "torchmetrics==0.10.3"]}
+    runtime_env = {"conda": "base"}
     ray.init(runtime_env=runtime_env)
     if args.smoke_test:
         tune_mnist(
